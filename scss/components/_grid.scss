@@ -4,6 +4,13 @@
 
 .container {
     padding: 0 10px;
+
+    @media #{$breakpoint} {
+        max-width: 1400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   
   .row {
@@ -25,7 +32,7 @@
   }
   
   .theme.col-2 {
-    background-color: #fd7856;
+    background-color: $color-warning;
   }
   
   .theme.col-3 {
@@ -53,7 +60,7 @@
   }
   
   .theme.col-9 {
-    background-color: #e4757a;
+    background-color: $color-error;
   }
   
   .theme.col-10 {
@@ -61,7 +68,7 @@
   }
   
   .theme.col-11 {
-    background-color: #51ddfc;
+    background-color: $color-primary;
   }
   
   .theme.col-12 {
